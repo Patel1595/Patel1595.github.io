@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Madlab.css">
+    <meta charset="UTF-8">
+    <title>MadStory</title>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="Interest.html">Interest</a>
+        <a href="Projects.html">Mini Projects</a>
+        <a href="binary.html">Binary</a>
+        <a href="Calc.html">Calculator</a>
+        <a class="active" href="Mad.html">MadStory</a>
+        <a href="Quiz.html">Quiz</a>         <a href="Anim.html">Animation</a>
+
+    </div>
+</head>
+<script type="text/javascript">
+
+    function WorkOn()
+    {
+        var Ad1 = document.story.Ad1.value;
+        var verb1 = document.story.verb1.value;
+        var Object = document.story.ob1.value;
+        var toy = document.story.toy.value;
+        var ad2 = document.story.ad2.value;
+        var Num = document.story.num.value;
+        var place = document.story.place.value;
+        var breed1 = document.story.breed.value;
+        var breed2 = document.story.breed2.value;
+
+        document.getElementById("1st").innerHTML = 'Dogs are very ' + Ad1 + ' and can be taught many ' + verb1 + ' tricks.';
+        document.getElementById("2nd").innerHTML = 'A Dog can be trained to carry an ' + Object + ' in his mouth';
+        document.getElementById("3rd").innerHTML = 'And if you throw his ' + toy + ', he will run and fetch it.';
+        document.getElementById("4th").innerHTML = 'Dogs will also bark ' + ad2 + ', if someone tries to break into your house during the night.';
+        document.getElementById("5th").innerHTML = 'One of the most popular canine pets today is the ' + place + ' Spaniel.';
+        document.getElementById("6th").innerHTML = 'They live to be ' + Num + ' years old.';
+        document.getElementById("7th").innerText = 'Other popular dogs are Terriers, German ' + breed1 + ', and the ' + breed2 + ' Poodle'
+    }
+
+
+</script>
+<body>
+<br><br>
+<form name="story">
+    Adjective: <input name="Ad1" type="text"> <br><br>
+    Verb: <input name="verb1" type="text"> <br><br>
+    Object: <input name="ob1" type="text"><br><br>
+    Toy ____: <input name="toy" type="text"><br><br>
+    Adverb: <input name="adverb" type="text"><br><br>
+    Adjective: <input name="ad2" type="text"><br><br>
+    A Number: <input name="num" type="text"><br><br>
+    Place: <input name="place" type="text"><br><br>
+    Breed of dog: <input name="breed" type="text"><br><br>
+    Breed of dog: <input name="breed2" type="text"><br><br>
+
+    <button type="button" onclick="document.story.result.value=WorkOn()">Result</button> <br> <br>
+</form>
+
+
+<br><br>
+<div class="Para">
+<p id="1st"></p>
+<p id="2nd"></p>
+<p id="3rd"></p>
+<p id="4th"></p>
+<p id="5th"></p>
+<p id="6th"></p>
+<p id="7th"></p>
+</div>
+</body>
+</html>

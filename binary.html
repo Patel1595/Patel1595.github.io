@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Binary</title>
+    <script src="binary.js"></script>
+    <link rel="stylesheet" href="binary.css">
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="Interest.html">Interest</a>
+        <a href="Projects.html">Mini Projects</a>
+        <a class="active">Binary</a>
+        <a href="Calc.html">Calculator</a>
+        <a href="Mad.html">MadStory</a>
+        <a href="Quiz.html">Quiz</a>
+        <a href="Anim.html">Animation</a>
+
+    </div>
+</head>
+<body>
+
+<form name="bin">
+    <h1>Base 2 to Base 10</h1>
+    Enter a base 2 #: <input id="input1" type="text">
+    <br> Result: <input name="result" readonly="true">
+    <br> <button type="button" onclick="document.bin.result.value=baseTwo()">Get Results</button>
+
+</form>
+
+
+<form name="cook">
+    <h1>Base 10 to base 2</h1>
+    Enter a base 10 #: <input id="inp1" type="text">
+    <br> Result: <input name="result" readonly="true">
+    <br> <button type="button" onclick="document.cook.result.value=BaseTenToTwo()">Get result</button>
+</form>
+
+<form name="work">
+    <h1>Base 10 to any Base</h1>
+    Enter a base 10 #: <input id="input2" type="text">
+    <br>
+    Enter the base you want to convert to: <input id="inp" type="text">
+    <br> Result: <input name="result" readonly="true">
+    <br> <button type="button" onclick="document.work.result.value=baseTen()">Get Results</button>
+
+
+
+</form>
+</body>
+</html>

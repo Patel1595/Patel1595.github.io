@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <script src="Quix.js"></script>
+    <link rel="stylesheet" href="quizz.css">
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="Interest.html">Interest</a>
+        <a href="Projects.html">Mini Projects</a>
+        <a href="binary.html">Binary</a>
+        <a href="Calc.html">Calculator</a>
+        <a href="Mad.html">MadStory</a>
+        <a class="active" href="Quiz.html">Quiz</a>
+        <a href="Anim.html">Animation</a>
+
+    </div>
+</head>
+<body>
+
+<form name="quiz">
+    <br><br>
+    <img src="img/Snap.jpg" height="200" width="211"/>
+<br><br><br>
+    Question 1: What logo is this? <br>
+    <input type="text" name="a1">
+<br><br><br>
+    <img src="img/Mario.png" height="200" width="211"/><br>
+    Question 2: Which characters and in the picture? <br>
+    <input type="checkbox" name="a3A" value="Mario">Mario<br>
+    <input type="checkbox" name="a3B" value="Peach">Peach<br>
+    <input type="checkbox" name="a3C" value="Wario">Wario<br>
+    <input type="checkbox" name="a3D" value="Luigi">Luigi<br>
+    <input type="checkbox" name="a3E" value="Green">Green<br>
+    <br><br><br>
+    <img src="img/Sonic.png" height="200" width="211"/> <br>
+    Question 3: What character is this? <br>
+    <input type="radio" name="a2" value="Blue">Blue<br>
+    <input type="radio" name="a2" value="Shadow">Shadow<br>
+    <input type="radio" name="a2" value="Sonic">Sonic<br>
+    <input type="radio" name="a2" value="Metal">Metal<br>
+<br><br><br>
+    <img src="img/Pika.png" height="200" width="211"/> <br>
+Question 4: Who is this? <br>
+    <input type="text" name="q4"> <br>
+<br><br><br>
+    <img src="img/sns.png" height="200" width="211"/> <br>
+    Question 5: What characters are in this picture? <br>
+    <input type="checkbox" name="q51" value="Tails">Tails<br>
+    <input type="checkbox" name="q52" value="Eggman">Eggman<br>
+    <input type="checkbox" name="q53" value="Shadow">Shadow<br>
+    <input type="checkbox" name="q54" value="Sonic">Sonic<br>
+    <input type="checkbox" name="q55" value="Eggman">Eggman<br>
+<br><br><br>
+    <img src="img/math.jpg" height="250" width="250"/> <br>
+    Question 6: What is the answer to the picture above? <br>
+    <input type="radio" name="a61" value="16">16<br>
+    <input type="radio" name="a61" value="20">20<br>
+    <input type="radio" name="a61" value="13">13<br>
+    <input type="radio" name="a61" value="17">17<br>
+    <button type="button" onclick="checkAnswers()">Result</button>
+</form>
+<div class="QuizOut">
+<p1 id="outPut"><font size="7"></font> </p1>
+    <br>
+    <p1 id="inCore"><font size="7"></font> </p1>
+
+</div>
+
+
+</body>
+</html>
